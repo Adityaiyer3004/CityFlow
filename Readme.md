@@ -62,6 +62,8 @@ GROQ_API_KEY=your_groq_api_key_here
 bash
 Copy code
 streamlit run cityflow_dashboard.py
+
+
 💬 Example Queries for the Chatbot
 “What’s the traffic like in Camden right now?”
 
@@ -90,7 +92,7 @@ Aditya Iyer
 Data Scientist & AI Engineer
 📍 London, UK
 💼 LinkedIn : https://linkedin.com/in/aditya-iyer
-🌐 GitHub : https://github.com/Adityaiyer3004
+🌐 GitHub: https://github.com/Adityaiyer3004
 
 🛡️ Disclaimer
 CityFlow uses public TfL data under the Open Government Licence (OGL).
