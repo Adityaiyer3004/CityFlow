@@ -29,13 +29,13 @@ CityFlow is designed as a foundation for **next-generation urban intelligence sy
 Here are some exciting directions for future development:
 
 ### 🧩 1. Autonomous Mode (Self-RAG)
-Let the agent re-analyze and summarize trends automatically every 15 minutes — no user input needed.
+Let the agent re-analyze and summarize trends automatically every 15 minutes, no user input needed.
 
 ### 🌆 2. Real-Time Route Optimisation
 Integrate with **Google Maps API** or **OpenRouteService** to recommend alternate routes dynamically based on congestion levels.
 
 ### 🧠 3. Multi-Agent Collaboration
-Extend CityFlow into a **multi-agent system** — e.g., one agent summarising trends, another forecasting, and another verifying data quality.
+Extend CityFlow into a **multi-agent system**, e.g., one agent summarising trends, another forecasting, and another verifying data quality.
 
 ### 🛰 4. Historical Pattern Learning
 Incorporate a **Time-Series model (Prophet / LSTM)** trained on TfL data for predictive congestion forecasting.
@@ -44,7 +44,7 @@ Incorporate a **Time-Series model (Prophet / LSTM)** trained on TfL data for pre
 Deploy to **Streamlit Cloud** or **Render**, automate data refresh via **GitHub Actions**, and integrate observability with **LangSmith**.
 
 ### 🔗 6. Cross-City Expansion
-Generalize the pipeline to include **Paris, Madrid, or Mumbai** using open government data feeds — turning CityFlow into a **global AI mobility monitor**.
+Generalize the pipeline to include **Paris, Madrid, or Mumbai** using open government data feeds, turning CityFlow into a **global AI mobility monitor**.
 
 ## 👨‍💻 Author
 **Aditya Iyer – Data Scientist & AI Engineer**
