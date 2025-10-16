@@ -1,31 +1,19 @@
-# Core frameworks
 streamlit==1.38.0
 streamlit-autorefresh==1.0.1
 plotly==5.24.0
 pandas==2.2.3
 numpy==1.26.4
-requests==2.32.3
 python-dotenv==1.0.1
 pytz==2024.2
-
-# Machine Learning / NLP
 sentence-transformers==3.0.1
 scikit-learn==1.5.2
-
-# LangChain + Groq integration
 langchain==0.3.27
 langchain-core==0.3.79
 langchain-community==0.3.31
 langchain-openai==0.3.35
 openai==2.3.0
-
-# Database
 sqlite-utils==3.36
-
-# Visualization
 matplotlib==3.9.2
-
-# Misc utilities
 aiohttp==3.10.5
 tenacity==8.2.3
 orjson==3.10.15
