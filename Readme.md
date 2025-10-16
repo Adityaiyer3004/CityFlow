@@ -38,9 +38,9 @@ Query	Tool Used
 “Forecast congestion for this evening.”	forecast_trends
 “Suggest alternate routes near Camden.”	recommend_alternatives
 
-👨‍💻 Author
-Aditya Iyer – Data Scientist & AI Engineer
-Built with ❤️ using Groq + LangChain + TfL Open Data
+## 👨‍💻 Author
+**Aditya Iyer – Data Scientist & AI Engineer**
+**Built with ❤️ using Groq + LangChain + TfL Open Data**
 
 
 
