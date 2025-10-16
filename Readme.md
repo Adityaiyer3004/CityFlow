@@ -21,6 +21,9 @@ CityFlow uses **Groq Llama-3.3 70B**, **LangChain**, and **TfL Open Data** to cr
 - **SQLite + Pandas**
 - **Python 3.11**
 
+## 👨‍💻 Author
+**Aditya Iyer – Data Scientist & AI Engineer**
+**Built with ❤️ using Groq + LangChain + TfL Open Data**
 ---
 
 ## 🚀 Run Locally
