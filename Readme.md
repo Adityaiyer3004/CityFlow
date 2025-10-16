@@ -40,10 +40,3 @@ Query	Tool Used
 
 
 
-
-## 👨‍💻 Author
-**Aditya Iyer – Data Scientist & AI Engineer**
-**Built with ❤️ using Groq + LangChain + TfL Open Data**
-
-
-
