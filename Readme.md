@@ -1,101 +1,65 @@
-# 🚦 CityFlow – AI-Powered London Traffic Dashboard
+# 🚦 CityFlow – AI-Powered London Traffic Intelligence Agent
 
-CityFlow is an **AI-driven Streamlit dashboard** that visualizes real-time **TfL (Transport for London)** disruptions and allows users to **chat with an intelligent traffic assistant** powered by **LLMs and embeddings**.
-
----
-
-## 🌍 Overview
-
-CityFlow connects to the TfL API, stores disruption data in SQLite, and updates every 15 minutes.  
-It then uses **sentence-transformer embeddings** to enable **natural-language queries** like:
-
-> “What’s happening near Westminster and Southwark?”  
-> “Show me all road closures today.”
-
-This makes it the perfect fusion of **data visualization**, **live monitoring**, and **AI conversation**.
+CityFlow uses **Groq Llama-3.3 70B**, **LangChain**, and **TfL Open Data** to create a real-time AI agent that analyses live London traffic.
 
 ---
 
-## 🧩 Features
-
-- 🔄 **Auto-refreshing data** from TfL every 15 minutes  
-- 🧠 **AI-generated summaries** of live London traffic conditions  
-- 💬 **CityFlow Assistant** – a smart chatbot using `sentence-transformers` + `Groq Llama 3.3`  
-- 📈 **Interactive charts** built with Plotly (severity breakdowns, time trends)  
-- ⚙️ **SQLite backend** for storing and refreshing TfL data  
-- 🕐 **Timezone-aware updates** (London local time)  
-- 🌗 **Modern, responsive Streamlit UI**
+## ⚙️ Features
+- 🧠 **Agentic AI System** – Groq-powered reasoning across multiple tools  
+- 🛰 **Live TfL Feed Integration** – refreshed every 15 min  
+- 📊 **Interactive Dashboard** – Streamlit + Plotly visualizations  
+- 💬 **Semantic Q&A + Trend Forecasts**  
+- 🧩 **Agent Console** – Real-time insight into tool usage & latency  
 
 ---
 
-## 🧠 Tech Stack
-
-| Layer | Tools |
-|:------|:------|
-| **Frontend** | Streamlit, Plotly |
-| **Backend** | Python, SQLite |
-| **AI/ML** | Sentence Transformers (`all-MiniLM-L6-v2`), Groq API (`Llama 3.3 70B`) |
-| **Infra** | Python-dotenv, Requests, Pytz |
-| **Embeddings** | Cosine Similarity for semantic retrieval |
+## 🧰 Tech Stack
+- **LangChain Community**
+- **Groq API (Llama 3.3 70B)**
+- **Streamlit + Plotly**
+- **Sentence Transformers**
+- **SQLite + Pandas**
+- **Python 3.11**
 
 ---
 
-## 🧰 Installation
-
-### 1️⃣ Clone the repository
+## 🚀 Run Locally
 ```bash
-git clone https://github.com/Adityaiyer3004/CityFlow.git
+git clone https://github.com/adityaiyer30/CityFlow.git
 cd CityFlow
-
-
-2️⃣ Install dependencies
-bash
-Copy code
 pip install -r requirements.txt
-3️⃣ Add your environment variables
-Create a .env file in the root directory:
-
-bash
-Copy code
-GROQ_API_KEY=your_groq_api_key_here
-4️⃣ Run the dashboard
-bash
-Copy code
+python tfl_pipeline.py
 streamlit run cityflow_dashboard.py
+🧠 Example Queries
+Query	Tool Used
+“Summarise today’s traffic trends.”	summarize_trends
+“Compare traffic today vs yesterday.”	compare_trends
+“What’s causing most disruptions?”	analyze_causes
+“Forecast congestion for this evening.”	forecast_trends
+“Suggest alternate routes near Camden.”	recommend_alternatives
 
+👨‍💻 Author
+Aditya Iyer – Data Scientist & AI Engineer
+Built with ❤️ using Groq + LangChain + TfL Open Data
 
-💬 Example Queries for the Chatbot
-“What’s the traffic like in Camden right now?”
-
-“Are there any major disruptions in Westminster?”
-
-“Show me all delays across Southwark.”
-
-“What roads are closed near Canary Wharf?”
-
-🚀 Project Structure
-bash
+yaml
 Copy code
-CityFlow/
-│
-├── cityflow_dashboard.py     # Streamlit dashboard (AI + charts)
-├── tfl_pipeline.py           # TfL API data ingestion pipeline
-├── cityflow.db               # SQLite database
-├── latest_summary.txt        # AI-generated summary file
-├── requirements.txt          # Project dependencies
-├── data/                     # Data storage folder
-│   └── london_boroughs.geojson (optional)
-└── .env                      # API keys (not committed)
 
-🧑‍💻 Author
-Aditya Iyer
-Data Scientist & AI Engineer
-📍 London, UK
-💼 LinkedIn : https://linkedin.com/in/aditya-iyer
-🌐 GitHub: https://github.com/Adityaiyer3004
+---
 
-🛡️ Disclaimer
-CityFlow uses public TfL data under the Open Government Licence (OGL).
-This project is for educational and research purposes only.
+#### 💬 LinkedIn Caption
+> 🚦 Introducing **CityFlow – London’s first AI-powered Traffic Intelligence Agent**  
+> Built with **Groq + LangChain + TfL Live Data**, CityFlow doesn’t just display congestion — it *reasons* through it.  
+>  
+> 🧠 Groq Llama 3.3 for real-time analysis  
+> 🗺 TfL API integration + semantic search  
+> ⚙️ Agentic architecture with live tool console  
+>  
+> Ask: *“Compare today vs yesterday”* or *“Forecast congestion this evening”* — and the AI replies like a real traffic analyst.  
+>  
+> Built with ❤️ in Streamlit.  
+> #AI #LangChain #Groq #TrafficIntelligence #AgenticAI #CityFlow  
 
-⭐ If you like this project, give it a star!
+
+
+
