@@ -42,24 +42,5 @@ Query	Tool Used
 Aditya Iyer – Data Scientist & AI Engineer
 Built with ❤️ using Groq + LangChain + TfL Open Data
 
-yaml
-Copy code
-
----
-
-#### 💬 LinkedIn Caption
-> 🚦 Introducing **CityFlow – London’s first AI-powered Traffic Intelligence Agent**  
-> Built with **Groq + LangChain + TfL Live Data**, CityFlow doesn’t just display congestion — it *reasons* through it.  
->  
-> 🧠 Groq Llama 3.3 for real-time analysis  
-> 🗺 TfL API integration + semantic search  
-> ⚙️ Agentic architecture with live tool console  
->  
-> Ask: *“Compare today vs yesterday”* or *“Forecast congestion this evening”* — and the AI replies like a real traffic analyst.  
->  
-> Built with ❤️ in Streamlit.  
-> #AI #LangChain #Groq #TrafficIntelligence #AgenticAI #CityFlow  
-
-
 
 
