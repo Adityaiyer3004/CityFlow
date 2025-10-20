@@ -64,6 +64,7 @@ Query	Tool Used
 “Forecast congestion for this evening.”	forecast_trends
 “Suggest alternate routes near Camden.”	recommend_alternatives
 
+#Architecture 
 cityflow/
 ├── app/
 │   ├── __init__.py
