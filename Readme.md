@@ -21,6 +21,22 @@ CityFlow uses **Groq Llama-3.3 70B**, **LangChain**, and **TfL Open Data** to cr
 - **SQLite + Pandas**
 - **Python 3.11**
 
+cityflow/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                ← FastAPI entrypoint
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   └── traffic.py          ← all endpoints
+│   ├── core/
+│   │   ├── agent_logic.py      ← uses cityflow_agent + summarize_trends
+│   │   └── tfl_utils.py        ← handles TfL data reading
+│   └── db/
+│       └── database.py         ← SQLite connection
+├── cityflow_agent.py
+├── cityflow_dashboard.py
+├── requirements.txt
+└── .env
 
 
 ## 🔮 Future Work
