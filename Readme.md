@@ -21,24 +21,6 @@ CityFlow uses **Groq Llama-3.3 70B**, **LangChain**, and **TfL Open Data** to cr
 - **SQLite + Pandas**
 - **Python 3.11**
 
-cityflow/
-├── app/
-│   ├── __init__.py
-│   ├── main.py                ← FastAPI entrypoint
-│   ├── routes/
-│   │   ├── __init__.py
-│   │   └── traffic.py          ← all endpoints
-│   ├── core/
-│   │   ├── agent_logic.py      ← uses cityflow_agent + summarize_trends
-│   │   └── tfl_utils.py        ← handles TfL data reading
-│   └── db/
-│       └── database.py         ← SQLite connection
-├── cityflow_agent.py
-├── cityflow_dashboard.py
-├── requirements.txt
-└── .env
-
-
 ## 🔮 Future Work
 
 CityFlow is designed as a foundation for **next-generation urban intelligence systems**.  
@@ -60,7 +42,7 @@ Incorporate a **Time-Series model (Prophet / LSTM)** trained on TfL data for pre
 Deploy to **Streamlit Cloud** or **Render**, automate data refresh via **GitHub Actions**, and integrate observability with **LangSmith**.
 
 ### 🔗 6. Cross-City Expansion
-Generalize the pipeline to include **Paris, Madrid, or Mumbai** using open government data feeds, turning CityFlow into a **global AI mobility monitor**.
+Generalise the pipeline to include **Paris, Madrid, or Mumbai** using open government data feeds, turning CityFlow into a **global AI mobility monitor**.
 
 ## 👨‍💻 Author
 **Aditya Iyer – Data Scientist & AI Engineer**
@@ -81,6 +63,24 @@ Query	Tool Used
 “What’s causing most disruptions?”	analyze_causes
 “Forecast congestion for this evening.”	forecast_trends
 “Suggest alternate routes near Camden.”	recommend_alternatives
+
+cityflow/
+├── app/
+│   ├── __init__.py
+│   ├── main.py                ← FastAPI entrypoint
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   └── traffic.py          ← all endpoints
+│   ├── core/
+│   │   ├── agent_logic.py      ← uses cityflow_agent + summarize_trends
+│   │   └── tfl_utils.py        ← handles TfL data reading
+│   └── db/
+│       └── database.py         ← SQLite connection
+├── cityflow_agent.py
+├── cityflow_dashboard.py
+├── requirements.txt
+└── .env
+
 
 
 
