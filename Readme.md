@@ -67,20 +67,21 @@ Query	Tool Used
 # Architecture
 
 cityflow/
-│
 ├── app/
-│   ├── __init__.py
 │   ├── main.py
 │   └── routes/
 │       └── traffic.py
-│
 ├── cityflow_agent.py
 ├── agent_console.py
-├── cityflow_dashboard.py      # Streamlit frontend
-├── cityflow.db
+├── tfl_pipeline.py
+├── cityflow_dashboard.py
+├── Dockerfile.api
+├── Dockerfile.streamlit
+├── docker-compose.yml
 ├── requirements.txt
 ├── .env
-└── docker-compose.yml  
+├── entrypoint.sh  ✅
+└── cityflow.db
 
 
 
