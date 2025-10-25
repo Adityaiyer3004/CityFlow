@@ -1,0 +1,43 @@
+# === Core Frameworks ===
+fastapi==0.115.4
+uvicorn==0.32.0
+streamlit==1.38.0
+streamlit-autorefresh==1.0.1
+plotly==5.24.0
+pandas==2.2.3
+numpy==1.26.4
+requests==2.32.5
+python-dotenv==1.0.1
+pytz==2024.2
+faiss-cpu==1.8.0
+
+
+# === Machine Learning / NLP ===
+sentence-transformers==3.0.1
+scikit-learn==1.5.2
+
+# === LangChain + Groq Integration ===
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.11
+langchain-openai==0.1.23
+langchain-groq==0.1.6
+langchain-text-splitters==0.2.4
+langsmith==0.1.147
+langgraph==0.1.13
+
+# === Database ===
+sqlite-utils==3.36
+
+# === Visualization ===
+matplotlib==3.9.2
+
+# === Utilities ===
+aiohttp==3.10.5
+tenacity==8.2.3
+orjson==3.10.15
+zstandard==0.25.0
+typing-extensions==4.12.2
+packaging==24.1
+prophet
+
