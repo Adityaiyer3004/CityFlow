@@ -1,0 +1,70 @@
+# =============== CityFlow Streamlit Dockerfile ===============
+FROM python:3.11-bullseye
+
+# Disable buffering for better logs
+ENV PYTHONUNBUFFERED=1
+ENV PIP_NO_BUILD_ISOLATION=false
+
+# ------------------------------------------------------
+# 🌍 Working directory + timezone sync
+# ------------------------------------------------------
+WORKDIR /app
+ENV PYTHONPATH=/app
+ENV TZ=Europe/London
+RUN apt-get update && apt-get install -y tzdata && \
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+# ------------------------------------------------------
+# 📦 Copy all files
+# ------------------------------------------------------
+COPY . .
+
+# ------------------------------------------------------
+# 🧰 System dependencies (Prophet + SciPy stack + aiohttp build deps)
+# ------------------------------------------------------
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    python3-dev \
+    gfortran \
+    libopenblas-dev \
+    liblapack-dev \
+    libffi-dev \
+    libssl-dev \
+    libxml2-dev \
+    libxslt1-dev \
+    zlib1g-dev \
+    cron \
+    && rm -rf /var/lib/apt/lists/*
+
+# ------------------------------------------------------
+# 🧠 Python dependencies
+# ------------------------------------------------------
+# 🔧 Explicitly install stable aiohttp + frozenlist before the main stack
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir "aiohttp==3.9.5" "frozenlist==1.4.1" \
+    && pip install --no-cache-dir -r requirements.txt
+
+# ------------------------------------------------------
+# 🧩 Startup wrapper: DB checks + periodic reseeding
+# ------------------------------------------------------
+RUN echo '#!/bin/bash\n\
+set -e\n\
+echo \"🚀 Running Streamlit startup checks...\"\n\
+python - <<PY\n\
+import sqlite3\n\
+conn = sqlite3.connect(\"cityflow.db\")\n\
+cur = conn.cursor()\n\
+cur.execute(\"CREATE TABLE IF NOT EXISTS daily_trends (date TEXT PRIMARY KEY, disruptions INTEGER)\")\n\
+conn.commit()\n\
+conn.close()\n\
+print(\"✅ daily_trends table OK.\")\n\
+PY\n\
+echo \"✅ Streamlit DB sanity check complete. Launching dashboard...\"\n\
+exec streamlit run cityflow_dashboard.py --server.port=8501 --server.address=0.0.0.0\n' > /app/start_streamlit.sh \
+    && chmod +x /app/start_streamlit.sh
+
+# ------------------------------------------------------
+# ⚙️ Port + Launch
+# ------------------------------------------------------
+EXPOSE 8501
+CMD ["/app/start_streamlit.sh"]
