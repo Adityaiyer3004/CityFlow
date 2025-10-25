@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+cityflow.db
+cityflow_memory.db
+cityflow_memory.index
+*.log
+*.sqlite
+.venv/
+venv/
+env/
+data/
+latest_summary.txt
