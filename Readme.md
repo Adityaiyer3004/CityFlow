@@ -56,7 +56,6 @@ Generalise the pipeline to include **Paris, Madrid, or Mumbai** using open gover
 
 [▶ Watch the demo video](assets/cityflow-demo.mp4)
 
-
 ## 🚀 Run Locally
 ```bash
 git clone https://github.com/adityaiyer30/CityFlow.git
