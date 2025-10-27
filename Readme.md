@@ -83,6 +83,15 @@ cityflow/
 ├── entrypoint.sh  ✅
 └── cityflow.db
 
+## 🎥 Demo
+
+<video src="assets/cityflow-demo.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
+[▶ Watch the demo video](assets/cityflow.mp4)
+
+
 
 
 
