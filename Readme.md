@@ -48,6 +48,16 @@ Generalise the pipeline to include **Paris, Madrid, or Mumbai** using open gover
 **Aditya Iyer – Data Scientist & AI Engineer**
 **Built with ❤️ using Groq + LangChain + TfL Open Data**
 ---
+## 🎥 Demo
+
+<video src="assets/cityflow-demo.mp4" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
+[▶ Watch the demo video](assets/cityflow-demo.mp4)
+
+
+
 
 ## 🚀 Run Locally
 ```bash
@@ -82,16 +92,6 @@ cityflow/
 ├── .env
 ├── entrypoint.sh  ✅
 └── cityflow.db
-
-## 🎥 Demo
-
-<video src="assets/cityflow-demo.mp4" controls width="600">
-  Your browser does not support the video tag.
-</video>
-
-[▶ Watch the demo video](assets/cityflow-demo.mp4)
-
-
 
 
 
