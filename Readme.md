@@ -85,11 +85,11 @@ cityflow/
 
 ## 🎥 Demo
 
-<video src="assets/Cityflow(1).mp4" controls width="600">
+<video src="assets/cityflow-demo.mp4" controls width="600">
   Your browser does not support the video tag.
 </video>
 
-[▶ Watch the demo video](assets/Cityflow.mp4)
+[▶ Watch the demo video](assets/cityflow-demo.mp4)
 
 
 
