@@ -50,11 +50,11 @@ Generalise the pipeline to include **Paris, Madrid, or Mumbai** using open gover
 ---
 ## 🎥 Demo
 
-<video src="assets/cityflow-demo.mp4" controls width="600">
+<video src="assets/Cityflowdemo.mp4" controls width="600">
   Your browser does not support the video tag.
 </video>
 
-[▶ Watch the demo video](assets/cityflow-demo.mp4)
+[▶ Watch the demo video](assets/Cityflowdemo.mp4)
 
 ## 🚀 Run Locally
 ```bash
